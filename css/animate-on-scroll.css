@@ -188,11 +188,9 @@ a {
   z-index: 1;
   height: 100%;
   width: 100%;
-  max-width: 800px;
 
   margin: auto;
   overflow: auto;
-  padding: 0 2rem;
 }
 
 .main-header {
@@ -235,7 +233,6 @@ img {
   /* grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem; */
 
-  margin-top: 2rem;
   position: relative;
 
 }
@@ -249,12 +246,12 @@ img {
 }
 
 .card img {
-  height: 400px;
+  height: auto;
   width: 100%;
 }
 
 .card>div {
-  padding: 2rem;
+  padding: 10px;
 }
 
 .end {
@@ -287,8 +284,8 @@ img {
 
   .card {
     display: flex;
-    height: 100vh;
-    width: 200%;
+    height: auto;
+    width: 100%;
     justify-content: center;
     align-items: center;
 
