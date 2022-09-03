@@ -82,11 +82,11 @@
       <div class="operation operation--transfer">
         <h2>Transfer money</h2>
         <form class="form form--transfer">
-          <input type="text" class="form__input form__input--to" />
-          <input type="number" class="form__input form__input--amount" />
+          <input type="text" placeholder="Transfer to" class="form__input form__input--to" />
+          <input type="number" placeholder="Amount" class="form__input form__input--amount" />
           <button class="form__btn form__btn--transfer">transfer</button>
-          <label class="form__label">Transfer to</label>
-          <label class="form__label">Amount</label>
+          <label class="form__label"></br> (jd)</label>
+          <label class="form__label"></br>(1000 or 500 or...)</label>
         </form>
       </div>
 
@@ -94,9 +94,9 @@
       <div class="operation operation--loan">
         <h2>Request loan</h2>
         <form class="form form--loan">
-          <input type="number" class="form__input form__input--loan-amount" />
+          <input type="number" placeholder="Amount" class="form__input form__input--loan-amount" />
           <button class="form__btn form__btn--loan">&rarr;</button>
-          <label class="form__label form__label--loan">Amount</label>
+          <label class="form__label form__label--loan"></br>(1000 or 500 or...)</label>
         </form>
       </div>
 
@@ -104,15 +104,15 @@
       <div class="operation operation--close">
         <h2>Close account</h2>
         <form class="form form--close">
-          <input type="text" class="form__input form__input--user" />
+          <input type="text" placeholder="Confirm user" class="form__input form__input--user" />
           <input
             type="password"
             maxlength="6"
-            class="form__input form__input--pin"
+            placeholder="Confirm PIN" class="form__input form__input--pin"
           />
           <button class="form__btn form__btn--close">&rarr;</button>
-          <label class="form__label">Confirm user</label>
-          <label class="form__label">Confirm PIN</label>
+          <label class="form__label"><br>js or jd</label>
+          <label class="form__label"><br>1111 or 2222</label>
         </form>
       </div>
 
