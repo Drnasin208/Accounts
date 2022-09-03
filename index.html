@@ -1,116 +1,128 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="/icon.png" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="css/animate-on-scroll.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-  <title>Animate on Scroll</title>
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <title>Bankist</title>
+  </head>
+  <body>
+    <!-- TOP NAVIGATION -->
+    <nav>
+      <p class="welcome">Log in to get started</p>
+      <!-- <img src="logo.png" alt="Logo" class="logo" /> -->
+      <form class="login">
+        <input
+          type="text"
+          placeholder="psw"
+          class="login__input login__input--user"
+        />
+      
+        <input
+          type="text"
+          placeholder="PIN"
+          maxlength="4"
+          class="login__input login__input--pin"
+        />
+        <button class="login__btn">submit</button>
+      </form>
+    </nav>
 
-  <div class="full-screen-video-container" style="width: auto;height:100%;">
-    <video poster="https://i.imgur.com/CSlRcW4.jpg" autoplay loop muted>
-      <source
-        src="https://github.com/WebDevSimplified/css-challenges/blob/master/Responsive%20Video%20Background/background_video.mp4?raw=true"
-        type="video/mp4" />
-    </video>
-    <header class=" main-header">
-      <h1>🎈🎈🎈<span></span></h1>
-      <p>
+    <main class="app">
+      <!-- BALANCE -->
+      <div class="balance">
+        <div>
+          <p class="balance__label">Current balance</p>
+          <p class="balance__date">
+            As of <span class="date">05/03/2037</span>
+          </p>
+        </div>
+        <p class="balance__value">0000€</p>
+      </div>
+
+      <!-- MOVEMENTS -->
+      <div class="movements">
+        <div class="movements__row">
+          <div class="movements__type movements__type--deposit">2 deposit</div>
+          <div class="movements__date">3 days ago</div>
+          <div class="movements__value">4 000€</div>
+        </div>
+        <div class="movements__row">
+          <div class="movements__type movements__type--withdrawal">
+            1 withdrawal
+          </div>
+          <div class="movements__date">24/01/2037</div>
+          <div class="movements__value">-378€</div>
+        </div>
+      </div>
+
+      <!-- SUMMARY -->
+      <div class="summary">
+        <p class="summary__label">In</p>
+        <p class="summary__value summary__value--in">0000€</p>
+        <p class="summary__label">Out</p>
+        <p class="summary__value summary__value--out">0000€</p>
+        <p class="summary__label">Interest</p>
+        <p class="summary__value summary__value--interest">0000€</p>
+        <button class="btn--sort">&uparrow;&downarrow; SORT</button>
+      </div>
+
+      <!-- OPERATION: TRANSFERS -->
+      <div class="operation operation--transfer">
+        <h2>Transfer money</h2>
+        <form class="form form--transfer">
+          <input type="text" class="form__input form__input--to" />
+          <input type="number" class="form__input form__input--amount" />
+          <button class="form__btn form__btn--transfer">transfer</button>
+          <label class="form__label">Transfer to</label>
+          <label class="form__label">Amount</label>
+        </form>
+      </div>
+
+      <!-- OPERATION: LOAN -->
+      <div class="operation operation--loan">
+        <h2>Request loan</h2>
+        <form class="form form--loan">
+          <input type="number" class="form__input form__input--loan-amount" />
+          <button class="form__btn form__btn--loan">&rarr;</button>
+          <label class="form__label form__label--loan">Amount</label>
+        </form>
+      </div>
+
+      <!-- OPERATION: CLOSE -->
+      <div class="operation operation--close">
+        <h2>Close account</h2>
+        <form class="form form--close">
+          <input type="text" class="form__input form__input--user" />
+          <input
+            type="password"
+            maxlength="6"
+            class="form__input form__input--pin"
+          />
+          <button class="form__btn form__btn--close">&rarr;</button>
+          <label class="form__label">Confirm user</label>
+          <label class="form__label">Confirm PIN</label>
+        </form>
+      </div>
+
+      <!-- LOGOUT TIMER -->
+      <p class="logout-timer">
+        You will be logged out in <span class="timer">05:00</span>
       </p>
-    </header>
-  </div>
+    </main>
 
+     <footer>
+      <div class="foot">&copy; by Marko Drnasin </div>
+    </footer> 
 
-  <section class=" card" data-aos-anchor-placement="center-center" style="width: auto;height: 100%;">
-    <img src="https://images.pexels.com/photos/2775196/pexels-photo-2775196.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-      alt="" />
-    <div class="paragraph" data-aos="fade-up">
-      <h1><em>Your thoughts create your feelings...</em></h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
-        enim laudantium, animi veniam libero eveniet culpa unde perferendis
-        illo fugit corporis, voluptatibus totam dolorum, maiores magnam
-        officia. Ab, delectus.
-      </p>
-      <a href="#" class="btn">Buy Now</a>
-    </div>
-  </section>
-
-  <section class="card" data-aos="fade-right" data-aos-anchor-placement="center-center"
-    style="width: auto;height: 100%;">
-    <img src="https://i.ibb.co/3NHjDcW/paint-2.png" alt="" />
-
-    <div class="paragraph" data-aos="fade-up" data-aos-duration="4000">
-      <h1>Your feelings create your thoughts</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
-        enim laudantium, animi veniam libero eveniet culpa unde perferendis
-        illo fugit corporis, voluptatibus totam dolorum, maiores magnam
-        officia. Ab, delectus.
-      </p>
-      <a href="#" class="btn">Buy Now</a>
-    </div>
-  </section>
-
-  <section class="card" data-aos="fade-left" style="width: auto;height: 100%;">
-    <img
-      src="https://images.pexels.com/photos/777211/winter-sunset-purple-sky-777211.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-      alt="" />
-    <div class="paragraph" data-aos="fade-down">
-      <h1>Think about your feelings</h1>
-      <p data-aos="fade-left">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
-        enim laudantium, animi veniam libero eveniet culpa unde perferendis
-        illo fugit corporis, voluptatibus totam dolorum, maiores magnam
-        officia. Ab, delectus.
-      </p>
-      <a href="#" class="btn">Buy Now</a>
-    </div>
-  </section>
-
-  <section class="card" data-aos="fade-right" style="width: auto;height: 100%;">
-    <img src="https://i.ibb.co/5LkJFRP/paint-4.png" alt="" />
-    <div class="paragraph" data-aos="fade-down-left">
-      <h1>Feel your thoughts...</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
-        enim laudantium, animi veniam libero eveniet culpa unde perferendis
-        illo fugit corporis, voluptatibus totam dolorum, maiores magnam
-        officia. Ab, delectus.
-      </p>
-      <a href="#" class="btn">Buy Now</a>
-    </div>
-  </section>
-
-  <section class="card" data-aos="fade-right" style="width: auto;height: 100%;">
-    <img src="https://images.pexels.com/photos/1819657/pexels-photo-1819657.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-      alt="" />
-    <div class="paragraph" data-aos="fade-down-left">
-      <h1>Let your feelings create <span class="end">endless day...</span></h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
-        enim laudantium, animi veniam libero eveniet culpa unde perferendis
-        illo fugit corporis, voluptatibus totam dolorum, maiores magnam
-        officia. Ab, delectus.
-      </p>
-      <a href="#" class="btn">Buy Now</a>
-    </div>
-  </section>
-  </main>
-  </div>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      offset: 100,
-      duration: 1500,
-    });
-  </script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
