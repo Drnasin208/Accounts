@@ -308,7 +308,7 @@ h2 {
 
 .form__input:focus {
   font-size: 0.6rem;
-  right:6px;
+  margin-right:6px;
   outline: none;
   background-color: rgba(255, 255, 255, 0.6);
 }
@@ -437,7 +437,7 @@ h2 {
 }
 @media(max-width:580px){
   .form__input:focus {
-  font-size: 0.6rem;
-  left:-6px;
+  font-size: 0.4rem;
+  margin-left:-6px;
   }
 }
