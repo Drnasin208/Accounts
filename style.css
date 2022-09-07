@@ -308,7 +308,6 @@ h2 {
 
 .form__input:focus {
   font-size: 0.6rem;
-  padding-right:6px;
   outline: none;
   background-color: rgba(255, 255, 255, 0.6);
 }
@@ -317,10 +316,6 @@ h2 {
   font-size: 1.3rem;
   text-align: center;
 }
-.form__input:focus {
-  font-size: 0.4rem;
-  padding-left:-6px;
-  }
 
 .form__btn {
   border: none;
@@ -428,6 +423,12 @@ h2 {
   grid-column: 1;
     grid-row: 12/13;
 }
+   .form__input:focus {
+  font-size: 0.4rem;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
 
   }
   footer{
