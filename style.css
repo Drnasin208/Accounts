@@ -434,3 +434,9 @@ h2 {
     align-self: center;
     font-size: 30px;
 }
+@mediaquery(max-width:580px){
+  .form__input:focus {
+  font-size: 0.6rem;
+  margin-left:-6px;
+  }
+}
