@@ -308,7 +308,7 @@ h2 {
 
 .form__input:focus {
   font-size: 0.6rem;
-  margin-right:6px;
+  padding-right:6px;
   outline: none;
   background-color: rgba(255, 255, 255, 0.6);
 }
@@ -317,6 +317,10 @@ h2 {
   font-size: 1.3rem;
   text-align: center;
 }
+.form__input:focus {
+  font-size: 0.4rem;
+  padding-left:-6px;
+  }
 
 .form__btn {
   border: none;
@@ -435,9 +439,4 @@ h2 {
     align-self: center;
     font-size: 30px;
 }
-@media(max-width:580px){
-  .form__input:focus {
-  font-size: 0.4rem;
-  margin-left:-6px;
-  }
-}
+
