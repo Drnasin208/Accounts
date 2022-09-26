@@ -424,7 +424,7 @@ h2 {
     grid-row: 12/13;
 }
    .form__input:focus {
-  font-size: 1rem;
+  font-size: 1.2rem;
   outline: none;
   background-color: rgba(255, 255, 255, 0.6);
 }
